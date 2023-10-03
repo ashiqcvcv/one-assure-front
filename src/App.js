@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import SelectInsurancePlan from './Components/SelectInsurancePlan';
+import ViewPlanDetails from './Components/ViewPlanDetails';
+import CheckOut from './Components/CheckOut';
+import Header from './Components/Header';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<SelectInsurancePlan />} />
+          <Route path='/view-plan-detail' element={<ViewPlanDetails />} />
+          <Route path='/checkout' element={<CheckOut />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

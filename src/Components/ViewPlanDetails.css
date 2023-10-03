@@ -1,0 +1,17 @@
+.adult-img {
+    background-image: url('../../public/adult.svg');
+    width: 50px;
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.child-img {
+    background-image: url('../../public/child.svg');
+    width: 50px;
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.table-property {
+    min-height: 290px;
+}

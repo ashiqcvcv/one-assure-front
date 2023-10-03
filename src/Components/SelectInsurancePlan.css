@@ -1,0 +1,232 @@
+.outer-card {
+    min-height: 80vh;
+    width: 80vw;
+    border-radius: 40px;
+    box-shadow: 0 3px 24px 0 rgba(37, 56, 88, .1)
+}
+
+.inner-card {
+    padding-top: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.select-member {
+    position: relative;
+    cursor: pointer;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    padding: 19px 11px 19px 67px;
+    border-radius: 12px;
+    border: 1px solid #DFE1E6;
+    background: #FAFBFC;
+    box-shadow: 0 4px 12px 0 rgba(37, 56, 88, .08);
+    color: #253858;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px
+}
+
+.select-member input {
+    visibility: hidden;
+}
+
+.select-member label.adult::before {
+    background: url('../../public/adult.svg');
+}
+.adult-img {
+    background-image: url('../../public/adult.svg');
+    width: 50px;
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.child-img {
+    background-image: url('../../public/child.svg');
+    width: 50px;
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.select-member label.tier-1::before {
+    background: url('../../public/city.svg');
+}
+
+.select-member label.child::before {
+    background: url('../../public/child.svg');
+}
+
+.select-member .addmore {
+    width: 80px;
+    background: #eef5fe;
+    position: absolute;
+    height: 30px;
+    border-radius: 4px;
+    top: 35%;
+    transform: translate(0, -50%);
+    right: 4px;
+    z-index: 4;
+}
+
+.select-member label::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    left: 11px;
+    transform: translate(0, -50%);
+}
+
+.addmore .minus {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.minus {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0065FF;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(10px, -50%)
+}
+
+.minus.gray {
+    border: 1px solid #253858
+}
+
+.minus.gray:before,
+.minus.gray:after {
+    content: "";
+    background: #253858
+}
+
+.minus:before,
+.minus:after {
+    content: "";
+    position: absolute;
+    background: #0065FF
+}
+
+.minus:before {
+    display: none
+}
+
+.minus:after {
+    top: 50%;
+    left: 4px;
+    right: 4px;
+    height: 2px;
+    transform: translateY(-50%)
+}
+
+.plus {
+    position: absolute;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0065FF;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(10px, -50%)
+}
+
+.plus.gray {
+    border: 1px solid #253858;
+    top: 50%
+}
+
+.plus.gray:before,
+.plus.gray:after {
+    content: "";
+    background: #253858
+}
+
+.plus:before,
+.plus:after {
+    content: "";
+    position: absolute;
+    background: #0065FF
+}
+
+.plus:before {
+    left: 50%;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    transform: translateX(-50%)
+}
+
+.plus:after {
+    top: 50%;
+    left: 4px;
+    right: 4px;
+    height: 2px;
+    transform: translateY(-50%)
+}
+
+.addmore input {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    font-size: 16px;
+    margin: 5px auto;
+    border: none;
+    left: 27px;
+    position: absolute;
+    text-align: center;
+    background: #eef5fe;
+    visibility: visible;
+}
+
+.select-tenure {
+    padding-left: 21px;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px 0 rgba(37, 56, 88, .08);
+    color: #253858;
+    background: #FAFBFC;
+    border: 1px solid #DFE1E6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.select-age {
+    height: 30px;
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+    font-weight: 500;
+    border-width: 0px;
+}
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-candidates {
+    min-height: 450px;
+    box-shadow: 0 4px 12px 0 rgba(37, 56, 88, .08);
+    border-radius: 20px;
+}
+.selected-card {
+    background-color: #f1f1f1;
+    height: 55px;
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: #FAFBFC;
+    box-shadow: 0 4px 6px 0 rgba(37, 56, 88, .08);
+    color: #253858;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.selected {
+    border-color: #0065FF;
+    border-width: thin;
+}
