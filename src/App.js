@@ -11,7 +11,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<SelectInsurancePlan />} />
+          <Route path='/one-assure-front' element={<SelectInsurancePlan />} />
           <Route path='/view-plan-detail' element={<ViewPlanDetails />} />
           <Route path='/checkout' element={<CheckOut />} />
         </Routes>
