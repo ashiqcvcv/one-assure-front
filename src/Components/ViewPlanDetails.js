@@ -13,7 +13,7 @@ export default function ViewPlanDetails() {
                 Accept: 'application.json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(location.state)
+            body: JSON.stringify(location.state && location.state)
         })
             .then(response => response.json())
             .then(json => {
@@ -34,7 +34,7 @@ export default function ViewPlanDetails() {
                                         <div class="section-title text-center">
                                             <div class="title-text">
                                                 <h2>Plan Details</h2>
-                                                <p>{`Total ${location.state.clients.reduce((acc, curr) => acc + curr['base-rate'], 0)} for ${location.state.year} years`}</p>
+                                                <p>{`Total ${((location.state && location.state.clients) || []).reduce((acc, curr) => acc + curr['base-rate'], 0)} for ${(location.state && location.state.year) || 0} years`}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@ export default function ViewPlanDetails() {
                                                 </thead>
                                                 <tbody>
                                                     {
-                                                        location.state.clients.map((client, index) => {
+                                                        ((location.state && location.state.clients) || []).map((client, index) => {
                                                             return (<tr>
                                                                 <th scope="row">{index + 1}</th>
                                                                 <td className='d-flex align-items-center align-self-center'>

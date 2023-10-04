@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/one-assure-front' element={<SelectInsurancePlan />} />
-          <Route path='/view-plan-detail' element={<ViewPlanDetails />} />
-          <Route path='/checkout' element={<CheckOut />} />
+          <Route path='/one-assure-front/view-plan-detail' element={<ViewPlanDetails />} />
+          <Route path='/one-assure-front/checkout' element={<CheckOut />} />
         </Routes>
       </BrowserRouter>
     </div>

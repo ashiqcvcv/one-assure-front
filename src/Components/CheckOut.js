@@ -11,11 +11,11 @@ export default function CheckOut() {
             <div className='d-flex align-items-center align-self-center p-4'>
                 <div className='outer-card'>
                     <div className='inner-card row'>
-                        <h3>{`Policy number: ${location.state.policy_number}`}</h3>
-                        <h3 className='pb-4'>{`You have successfully purchased the plan for ${location.state.year} on an amount of ${location.state.tenure_amount} for the city ${location.state.city}.`}</h3>
+                        <h3>{`Policy number: ${location.state && location.state.policy_number}`}</h3>
+                        <h3 className='pb-4'>{`You have successfully purchased the plan for ${location.state && location.state.year} on an amount of ${location.state && location.state.tenure_amount} for the city ${location.state && location.state.city}.`}</h3>
                         <div className='d-flex align-items-center align-self-center row'>
                             {
-                                location.state.clients.map(client => {
+                                ((location.state && location.state.clients) || []).map(client => {
                                     return (<div class="card col-3" >
                                     <img class="card-img-top" src={`./${client.value}.svg`} alt="child" width={90} height={90} />
                                     <div class="card-body">
