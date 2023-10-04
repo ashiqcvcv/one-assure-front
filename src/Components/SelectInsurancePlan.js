@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './SelectInsurancePlan.css';
-const baseUrl = 'https://ec2-13-212-56-161.ap-southeast-1.compute.amazonaws.com/';
+const baseUrl = 'http://ec2-54-254-1-73.ap-southeast-1.compute.amazonaws.com/';
 
 export default function SelectInsurancePlan() {
     const navigate = useNavigate();
