@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/one-assure-front/static/css/main.8dc49b4c.css",
-    "main.js": "/one-assure-front/static/js/main.f2a7ad34.js",
+    "main.js": "/one-assure-front/static/js/main.4a3cb589.js",
     "static/js/787.28cb0dcd.chunk.js": "/one-assure-front/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.svg": "/one-assure-front/static/media/city.18affd1ac2d1484b6c58.svg",
     "static/media/child.svg": "/one-assure-front/static/media/child.f2999e82a876e7b8117e.svg",
     "static/media/adult.svg": "/one-assure-front/static/media/adult.1cdada1c016153e91539.svg",
     "index.html": "/one-assure-front/index.html",
     "main.8dc49b4c.css.map": "/one-assure-front/static/css/main.8dc49b4c.css.map",
-    "main.f2a7ad34.js.map": "/one-assure-front/static/js/main.f2a7ad34.js.map",
+    "main.4a3cb589.js.map": "/one-assure-front/static/js/main.4a3cb589.js.map",
     "787.28cb0dcd.chunk.js.map": "/one-assure-front/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8dc49b4c.css",
-    "static/js/main.f2a7ad34.js"
+    "static/js/main.4a3cb589.js"
   ]
 }
