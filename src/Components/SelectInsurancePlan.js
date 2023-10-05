@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './SelectInsurancePlan.css';
-const baseUrl = 'http://ec2-54-254-1-73.ap-southeast-1.compute.amazonaws.com/';
+const baseUrl = process.env.REACT_APP_API_URL;
 
 export default function SelectInsurancePlan() {
     const navigate = useNavigate();
@@ -130,7 +130,7 @@ export default function SelectInsurancePlan() {
         })
             .then(response => response.json())
             .then(json => {
-                navigate('/view-plan-detail', { state: { clients: json, year: selectedYear, tenure_amount: selectedTenure, city: selectedCity } });
+                navigate('/one-assure-front/view-plan-detail', { state: { clients: json, year: selectedYear, tenure_amount: selectedTenure, city: selectedCity } });
             })
             .catch(error => console.error(error));
     }

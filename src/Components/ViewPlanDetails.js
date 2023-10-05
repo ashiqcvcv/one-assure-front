@@ -1,7 +1,7 @@
 import React from 'react'
 import './ViewPlanDetails.css';
 import { useLocation, useNavigate } from 'react-router-dom';
-const baseUrl = 'http://ec2-54-254-1-73.ap-southeast-1.compute.amazonaws.com/';
+const baseUrl = process.env.REACT_APP_API_URL;
 
 export default function ViewPlanDetails() {
     const location = useLocation();
@@ -17,7 +17,7 @@ export default function ViewPlanDetails() {
         })
             .then(response => response.json())
             .then(json => {
-                navigate('/checkout', { state: json });
+                navigate('/one-assure-front/checkout', { state: json });
             })
             .catch(error => console.error(error));
     }
